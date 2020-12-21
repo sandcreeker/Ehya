@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин одежды ehya</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar navbar__mobile__fixed">
+    <div class="container">
+      <div class="navbar-container">
+        <div class="navbar__logo">
+          <a href="https://kroken.ru/ehya/" class="logo">
+            <img src="img/Logo.svg" alt="logo: ehya" class="navbar__image">
+          </a>
+        </div>
+        <!-- /.navbar__logo -->
+        <div class="navbar-menu">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Новинки</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Тренды</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Отзывы</a>
+            </li>
+            <li class="navigation__item navigation__item__contacts">
+              <a href="#" class="navigation__link">Контакты</a>
+            </li>
+          </ul>
+          <button class="navbar__button">Войти</button>
+        </div>
+        <!-- /.navbar-menu -->
+        <button class="menu-button menu-button__mobile">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+        <div class="modal-overlay"></div>
+        <div class="navbar-modal">
+          <div class="navbar-modal-image">
+            <img src="img/ic_Close.svg" alt="icon: close" class="navbar-modal-image__icon">
+          </div>
+        <div class="navbar-modal-menu">
+          <ul class="navigation navbar-modal-navigation">
+            <li class="navigation__item navigation__item__modal">
+              <a href="#" class="navigation__link navigation__link__modal">Главная</a>
+            </li>
+            <li class="navigation__item navigation__item__modal">
+              <a href="#" class="navigation__link navigation__link__modal">Новинки</a>
+            </li>
+            <li class="navigation__item navigation__item__modal">
+              <a href="#" class="navigation__link navigation__link__modal">Тренды</a>
+            </li>
+            <li class="navigation__item navigation__item__modal">
+              <a href="#" class="navigation__link navigation__link__modal">Отзывы</a>
+            </li>
+            <li class="navigation__item navigation__item__contacts">
+              <a href="#" class="navigation__link navigation__link__modal">Контакты</a>
+            </li>
+          </ul>
+          <button class="navbar__button navbar__button__modal">Войти</button>
+        </div>
+      </div>
+      <!-- /.modal -->
+      <div class="feedback-overlay"></div>
+      <div class="feedback">
+          <div class="feedback-modal-image">
+            <img src="img/ic_Close.svg" alt="icon: close" class="feedback-modal-image__icon">
+          </div>
+            <h3 class="feedback__title feedback__title--message">Отправьте нам заявку</h3>
+            <div class="feedback-container">
+              <form action="send.php" method="POST" class="form feedback__form">
+                <div class="feedback__input__group">
+                  <input type="text" class="input feedback__input" placeholder="Ваше имя*" name="name" required autocomplete="off">
+                </div>
+                <div class="feedback__input__group">
+                  <input type="tel" class="phone input feedback__input" placeholder="Номер телефона*" name="phone" required autocomplete="off" minlength="18" data-mask="+7 (999) 999 99 99">
+                </div>
+                <div class="feedback__input__group">
+                <input type="email" class="input feedback__input" placeholder="Email*" name="email" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" autocomplete="off">
+                </div>
+                <textarea class="area feedback__area" placeholder="Сообщение" name="message"></textarea>
+                <div class="feedback__submit">
+                  <button class="button feedback__button" type="submit">Отправить</button>
+                <span class="feedback__info">* Обязательное поле</span>
+                </div>
+              </form>
+            </div>
+            <!-- /.feedback-container -->
+          </div>
+      </div>
+      <!-- /.navbar-container -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.navbar -->
+  
+  <section class="collection">
+    <div class="container">
+      <div class="collection-wrap">
+        <!-- /.collection-wrap -->
+        <div class="collection-text">
+          <h1 class="collection__title">Спасибо за оставленную заявку!</h1>
+          <p class="collection__info">Мы обязательно с вами свяжемся!</p>
+          <a href="https://kroken.ru/ehya/" class="collection__mainmenu">
+            <button class="button collection__button">В главное меню</button>
+          </a>
+        </div>
+        <!-- /.collection-text -->
+      </div>
+      <!-- /.collection-wrap -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <section class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-social">
+          <a href="https://kroken.ru/ehya/" class="footer-social__logo"><img src="img/footer-logo.svg" alt="icon: footer-logo" class="footer-social__image"></a>
+          <span class="footer-social__text">Интернет-магазин брендовой одежды с оплатой онлайн</span>
+          <div class="footer-link">
+            <a href="https://www.google.ru/" class="footer-link__icon" target="_blank"><img src="img/google-icon.svg" alt="icon: google" class="footer-link__image"></a>
+            <a href="https://twitter.com/" class="footer-link__icon" target="_blank"><img src="img/twitter-icon.svg" alt="icon: twitter" class="footer-link__image"></a>
+            <a href="https://www.instagram.com/" class="footer-link__icon" target="_blank"><img src="img/insta-icon.svg" alt="icon: instagram" class="footer-link__image"></a>
+            <a href="http://www.linkedin.com/" class="footer-link__icon" target="_blank"><img src="img/linkedin-icon.svg" alt="icon linkedin" class="footer-link__image"></a>
+          </div>
+          <!-- /.footer-social__link -->
+        </div>
+        <!-- /.footer-social -->
+        <div class="footer-information">
+            <div class="footer-card footer-navigation">
+              <h3 class="footer-card__title">Навигация</h3>
+              <a href="#" class="footer-card__link">Новая коллекция</a>
+              <a href="#" class="footer-card__link">Трендовая одежда</a>
+              <a href="#" class="footer-card__link">Истории Fashun</a>
+              <a href="#" class="footer-card__link">Отзывы клиентов</a>
+              <a href="#" class="footer-card__link">Вся одежда</a>
+            </div>
+            <div class="footer-card footer-services">
+              <h3 class="footer-card__title">Сервисы</h3>
+              <a href="#" class="footer-card__link">Рассрочка на 6 мес</a>
+              <a href="#" class="footer-card__link">Кредит на 12 мес</a>
+              <a href="#" class="footer-card__link">Доставка по РФ</a>
+              <a href="#" class="footer-card__link">Возврат покупок</a>
+              <a href="#" class="footer-card__link">Акции и кэшбек</a>
+            </div>
+            <div class="footer-card footer-company">
+              <h3 class="footer-card__title">Компания</h3>
+              <a href="#" class="footer-card__link">Об Ehya</a>
+              <a href="#" class="footer-card__link">Правила сайта</a>
+              <a href="#" class="footer-card__link">Обработка данных</a>
+              <a href="#" class="footer-card__link">Вакансии</a>
+            </div>
+            <div class="footer-card footer-contacts">
+              <h3 class="footer-card__title">Контакты</h3>
+              <a href="#" class="footer-card__link">Группа Фейсбук</a>
+              <a href="#" class="footer-card__link">Канал Youtube</a>
+            </div>
+            <!-- /.footer-navigation -->
+          </div>
+          <!-- /.footer-information -->
+      </div>
+      <!-- /.footer-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+   <script src="js/jquery-2.2.4.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

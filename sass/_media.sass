@@ -1,0 +1,872 @@
+@media ( max-width: 1330px )
+  .hero-container
+    max-width: 1200px
+@media ( max-width: 1200px )
+  .container
+    max-width: 960px
+  .navbar
+    &-menu
+      min-width: 622px
+    &__button
+      margin-left: 35px
+  .hero
+    &-container
+      max-width: 970px
+    &-image
+      height: 100%
+      &__background
+        width: 712px
+        height: 100%
+  .navigation
+    &__item
+      margin-right: 35px
+      &__contacts
+        margin-right: 0
+  .collection
+    &-wrap
+      max-height: 490px
+    &-text
+      max-width: 280px
+      margin-left: 20px
+    &__title
+      margin-bottom: 0
+    &__info
+      font-size: 18px
+      margin-top: 0
+      margin-top: 7px
+      margin-bottom: 18px
+  .trands
+    &-card
+      &__hidden
+        display: none
+    &-wrap
+      &__active
+        grid-template-columns: minmax(auto, auto) minmax(auto,auto) minmax(auto, auto)
+@media ( max-width:992px)
+  .container
+    max-width: 700px
+  .navbar
+    &-container
+      padding-left: 25px
+      padding-right: 25px
+    &-menu
+      display: none
+    &__button
+      margin-left: 0
+      transition: none
+      &:hover
+        background-color: inherit
+        color: $link
+        transition: none
+    &-modal
+      &-on
+        display: block
+  .button
+    &-up
+      display: none
+      transition: none
+      &:hover
+        filter: none
+        transition: none
+  .feedback
+    &__title
+      font-size: 16px
+      line-height: 20px
+    &__input
+      width: 100%
+      padding-top: 10px
+      padding-bottom: 10px
+      &__group
+        width: 200px
+    &__area
+      width: 100%
+    &__form
+      width: 100%
+    &__button
+      transition: none
+      &:hover
+        background-color: inherit
+        color: $link
+        transition: none
+  .navigation
+    &__item
+      margin-right: 15px
+    &__link
+      &::after
+        content: none
+  .hero
+    padding-bottom: 80px
+    padding-top: 34px
+    &-container
+      max-width: 737px
+      padding-left: 33px
+      height: 624px
+    &-text
+      max-width: 478px
+      padding-top: 41px
+    &__title
+      margin-bottom: 18px
+      font-size: 48px
+      line-height: 60px
+      margin-top: 30px
+    &-image
+      right: 0
+      width: 99%
+      &__background
+        width: 1070px
+        height: 133%
+    &__button
+      transition: none
+      margin-bottom: 39px
+      &:hover
+        color: #ffffff
+        transition: none
+        background-color: $primary
+  .advantages
+    width: 434px
+  .description
+    &__text
+      margin-bottom: 39px
+      font-size: 18px
+      line-height: 32px
+      max-width: 400px
+      max-height: 128px
+  .menu
+    &-button
+      display: flex
+      outline: none
+      padding: 0
+      width: 22px
+      height: 18px
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #ffffff
+      cursor: pointer
+      &__line
+        width: 22px
+        height: 2px
+        background-color: #3A4C66
+        border-radius: 20px
+  .collection
+    padding-bottom: 80px
+    &-wrap
+      flex-direction: column
+      max-height: 806px
+      align-items: center
+    &-photo
+      margin-bottom: 40px
+    &-text
+      margin-left: 0
+      max-width: 672px
+    &__title
+      margin-top: 0
+      margin-bottom: 24px
+    &__info
+      font-size: 20px
+      line-height: 36px
+      max-width: 100%
+      margin-top: 0
+      margin-bottom: 24px
+    &__link
+      transition: none
+      &:after
+        content: none
+    &__button
+      transition: none
+      &:hover
+        color: #ffffff
+        transition: none
+        background-color: $primary
+  .trands
+    padding-bottom: 80px
+    &-wrap
+      &__active
+        grid-template-columns: minmax(auto, auto) minmax(auto,auto)
+        padding: 0 46px
+        grid-row-gap: 48px
+    &-text
+      flex-direction: column
+      margin-bottom: 55px
+      &__title
+        margin-bottom: 28px
+      &-tabs
+        display: flex
+        justify-content: space-between
+        width: 285px
+        &__item
+          margin-left: 0
+    &-card
+      width: 280px
+      &__hidden
+        display: block
+      &-link
+        width: 280px
+      &__title
+        margin-left: 9px
+      &__pricetag
+        margin-left: 10px
+        padding-right: 11px
+        margin-right: 0
+      &__link
+        height: 25px
+      &__image
+        &__2
+          width: 121%
+          height: 223%
+          top: -43px
+        &__5
+          height: 132%
+          top: -20px
+        &__7
+          height: 215%
+      &__photo
+        transition: none
+        &:hover
+          filter: none
+      &__basket
+        transition: none
+        &:hover
+          filter: none
+      &__plus
+        width: 280px
+        transition: none
+        &:hover
+          filter: none
+  .reviews
+    &-slider
+      max-width: 630px
+      min-height: 415px
+      &__text
+        margin-top: 28px
+        padding-left: 17px
+        padding-right: 17px
+        margin-bottom: 30px
+        &__overflow
+          display: none
+  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+    bottom: -3px
+  .history
+    padding-bottom: 80px
+    &-slider
+      width: 689px
+    &-swiper
+      justify-content: space-between
+    &-wrapper
+      flex-direction: column
+      align-items: center
+    &-text
+      padding-top: 79px
+      padding-bottom: 36px
+      display: flex
+      flex-direction: column
+      max-width: 568px
+      align-items: center
+      &__info
+        text-align: center
+        margin-bottom: 36px
+      &__title
+        margin-top: 24px
+        margin-bottom: 16px
+    &-slides
+      &__card
+        margin-right: 18px
+      &__image
+        width: 321px
+      &__info
+        bottom: 12px
+        padding-left: 23px
+  .swiper
+    &-navigation
+      &__button
+        &__prev, &__next
+          &__icon
+            -webkit-filter: none
+            filter: none
+            &:hover
+              -webkit-filter: none
+              filter: none
+  .subscribe
+    padding-bottom: 64px
+    &-wrapper
+      padding-top: 72px
+      padding-bottom: 80px
+      display: flex
+      align-items: center
+      &__image
+        &__right
+          right: -177px
+          top: 300px
+        &__left
+          left: -197px
+          top: -31px
+    &-container
+      flex-direction: column
+      max-width: 447px
+    &-text
+      margin-bottom: 56px
+      &__title
+        text-align: center
+      &__info
+        text-align: center
+    &__button
+      transition: none
+      &:hover
+        filter: none
+  .footer
+    &-wrapper
+      width: 641px
+      margin-left: 23px
+    &-information
+      width: 358px
+      flex-wrap: wrap
+    &-social
+      &__logo
+        margin-bottom: 25px
+      &__text
+        margin-bottom: 27px
+    &-navigation, &-services
+      margin-bottom: 24px
+    &-link
+      &__image
+        transition: none
+        &:hover
+          filter: none
+    &-card
+      &__link
+        transition: none
+        &:hover
+          filter: none
+@media ( max-width:767px)
+  .container
+    margin-top: 8px
+    max-width: 650px
+    margin-bottom: 30px
+    width: 100%
+  .navbar
+    &-container
+      // padding: 18px 0px 18px
+  .feedback
+    &__input
+      &__group
+        flex-basis: 100%
+  .hero
+    padding-top: 0
+    &-text
+      max-width: 433px
+      padding-top: 36px
+    &-container
+      height: 624px
+      padding-left: 28px
+      max-width: 728px
+      width: 95%
+    &__title
+      font-size: 48px
+      line-height: 60px
+    &__button
+      margin-bottom: 40px
+    &-image
+      &__background
+        height: 778px
+        width: 985px
+  .description
+    &__text
+      font-size: 18px
+      line-height: 32px
+      margin-bottom: 36px
+  .advantages
+    width: 436px
+  .collection
+    &-wrap
+      max-height: 100%
+      padding-left: 50px
+      padding-right: 50px
+    &-photo
+      grid-template-columns: minmax(auto, auto) minmax(auto, auto)
+      justify-items: center
+      &__portait
+        grid-row: span 2
+        grid-column: 1 / 2
+        width: 277px
+        height: 490px
+        margin-right: 10px
+      &__hall
+        grid-row: 1 / 2
+        grid-column: 2 / 3
+        height: 230px
+        margin-bottom: 20px
+        width: 240px
+      &__room
+        grid-row: 2 / 3
+        grid-column: 2 / 3
+        width: 240px
+        height: 230px
+        justify-self: flex-end
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__info
+      font-size: 16px
+      line-height: 28px
+  .trands
+    padding-bottom: 18px
+    &-wrap
+      &__active
+        padding: 0 5px
+        justify-content: space-around
+        grid-row-gap: 40px
+    &-text
+      &-tabs
+        width: 218px
+        &__item
+          font-size: 16px
+          line-height: 22px
+      &__title
+        font-size: 28px
+        line-height: 36px
+    &-card
+      width: 255px
+      height: 400px
+      &-link
+        width: 255px
+        height: 300px
+      &__photo
+        height: 300px
+      &__image
+        &__2
+          width: 116%
+          height: 180%
+          top: 0
+        &__3
+          bottom: -47px
+          height: 136%
+        &__4
+          top: -38px
+          height: 130%
+        &__6
+          top: -24px
+          height: 211%
+        &__7
+          height: 160%
+      &__title
+        // font-size: 16px
+        // line-height: 20px
+      &__pricetag
+        // font-size: 14px
+        // line-height: 24px
+        // justify-content: start
+      &__link
+        width: 23px
+        // height: 20px
+        margin-left: 9px
+      &__plus
+        width: inherit
+        height: inherit
+        &__text
+          font-size: 21px
+          line-height: 32px
+          &__span
+            white-space: normal
+    &__photo
+      height: 170px
+    &__title
+      font-size: 16px
+      line-height: 20px
+    &__pricetag
+      font-size: 14px
+      line-height: 24px
+      justify-content: start
+    &__link
+      width: 14px
+      height: 20px
+      margin-left: 9px
+    &__text
+      font-size: 17px
+      line-height: 20px
+      &__span
+        white-space: normal
+  .reviews
+    &__icon
+      width: 70px
+      height: 81px
+    &-slider
+      min-height: 335px
+      &__text
+        padding: 0 20px
+        margin-top: 13px
+        font-size: 18px
+        line-height: 36px
+        &__hidden
+          display: none
+    &__name
+      margin-top: 24px
+  .history
+    &-swiper
+      align-items: center
+    &-slider
+      // height: 839px
+      width: 563px
+    &-slides
+      &__card
+        margin-bottom: 24px
+        margin-right: 0
+        height: 430px
+      &__image
+        width: 266px
+        height: 300px
+  .subscribe
+    &-container
+      margin: auto
+  .footer
+    &-wrapper
+      width: 470px
+@media (min-width: 576px) and ( max-width: 666px)
+  .hero
+    &-container
+      height: 800px
+      justify-content: center
+      align-items: flex-end
+    &-text
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__title
+      font-size: 36px
+      line-height: 40px
+      text-align: center
+    &-image
+      width: 130%
+      &__background
+        height: 102%
+        width: 848px
+  .description
+    &__text
+      text-align: center
+  .advantages
+    width: 380px
+    justify-content: space-around
+    flex-wrap: wrap
+    margin-bottom: 36px
+    &__icon
+      margin-bottom: 16px
+      width: 24px
+      height: 24px
+@media (max-width: 576px)
+  .container
+    margin-top: 0
+    // margin-bottom: 24px
+    // width: 100%
+  .navbar
+    &-container
+      padding-top: 18px
+      padding-left: 24px
+      padding-right: 24px
+  .feedback
+    &__area
+      margin-bottom: 10px
+    &__submit
+      align-items: flex-start
+      flex-direction: column
+      justify-content: stretch
+    &__info
+      order: -1
+      margin-bottom: 10px
+    &__button
+      width: 100%
+  .hero
+    padding-bottom: 60px
+    &-container
+      border-radius: 0
+      margin: 0
+      padding-left: 0
+      width: 100%
+      height: 899px
+      justify-content: center
+      align-items: flex-end
+    &-text
+      padding-left: 20px
+      padding-right: 20px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__title
+      margin-top: 18px
+      margin-bottom: 20px
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+    &__button
+      padding-left: 47px
+      padding-right: 47px
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 22px
+    &-image
+      width: 100%
+      right: 0
+      &::before
+        background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
+      &__background
+        position: absolute
+        height: 169%
+        width: 100%
+        bottom: -259px
+  .description
+    &__text
+      text-align: center
+      margin-bottom: 17px
+      font-size: 16px
+      line-height: 28px
+      max-height: 140px
+  .advantages
+    width: 280px
+    justify-content: space-around
+    flex-wrap: wrap
+    margin-bottom: 20px
+    &__text
+      margin-bottom: 16px
+    &__icon
+      width: 24px
+      height: 24px
+  .collection
+    padding-bottom: 85px
+    &-wrap
+      max-height: 100%
+      padding: 0
+    &-photo
+      grid-template-columns: minmax(auto, auto) minmax(auto, auto)
+      margin-bottom: 39px
+      justify-content: stretch
+      grid-column-gap: 14px
+      &__portait
+        grid-row: 1 / 2
+        grid-column: span 2
+        width: 290px
+        height: 300px
+        margin-bottom: 14px
+        margin-right: 0
+      &__hall
+        grid-row: 2 / 3
+        grid-column: 1 / 2
+        height: 97px
+        width: 138px
+        margin: 0
+        justify-self: end
+      &__room
+        grid-row: 2 / 3
+        grid-column: 2 / 3
+        width: 138px
+        height: 97px
+        justify-self: start
+    &-text
+      text-align: center
+    &__title
+      margin-bottom: 20px
+    &__info
+      padding: 0 25px
+    &__link
+      font-size: 16px
+      line-height: 28px
+  .trands
+    &-wrap
+      grid-row-gap: 21px
+      &__active
+        justify-content: space-evenly
+    &-text
+      margin-bottom: 34px
+      &__title
+        margin-bottom: 25px
+    &-card
+      width: 140px
+      height: 234px
+      &-link
+        height: 170px
+        width: 140px
+      &__photo
+        width: 100%
+        height: 170px
+      &__title
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 0
+        margin-top: 16px
+        margin-left: 0
+      &__pricetag
+        justify-content: stretch
+        font-size: 14px
+        line-height: 24px
+        margin-left: 0
+      &__link
+        width: 14px
+      &__plus
+        justify-content: stretch
+        height: 100%
+        &__image
+          margin-top: 38px
+        &__text
+          font-size: 17px
+          line-height: 20px
+          text-align: center
+          letter-spacing: 0.2px
+          margin-top: 13px
+  .reviews
+    padding-bottom: 35px
+    &-slider
+      width: 280px
+      height: 555px
+      &__item
+        padding-left: 1px
+        padding-right: 1px
+      &__text
+        padding-left: 10px
+        padding-right: 10px
+        letter-spacing: 0
+        margin-bottom: 0
+      &__name
+        margin-top: 24px
+  .history
+    padding-bottom: 34px
+    &-swiper
+      flex-direction: column
+    &-text
+      padding-top: 41px
+      padding-bottom: 28px
+      &__title
+        font-size: 28px
+        line-height: 36px
+        margin-top: 22px
+        &__span
+          display: none
+      &__info
+        font-size: 16px
+        line-height: 28px
+        padding-right: 20px
+        padding-left: 20px
+    &-slider
+      width: 280px
+      height: 836px
+    &-slides
+      &__card
+        max-width: 280px
+        height: 407px
+        margin-right: 0
+        margin-bottom: 2px
+      &__image
+        width: 270px
+        height: 277px
+      &__info
+        width: 270px
+        height: 150px
+        bottom: 2px
+        left: 6px
+      &__text
+        padding-right: 0
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 17px
+      &__link
+        font-size: 16px
+        line-height: 22px
+  .swiper
+    &-navigation
+      width: 112px
+      &__button
+        width: 48px
+        height: 48px
+  .subscribe
+    padding-bottom: 48px
+    &-wrapper
+      padding: 64px 20px 34px
+      &__image
+        &__right
+          right: -263px
+          top: 215px
+        &__left
+          top: 0
+          left: -445px
+    &-text
+      margin-bottom: 36px
+      &__title
+        font-size: 28px
+        line-height: 36px
+        margin-bottom: 24px
+      &__info
+        font-size: 16px
+        line-height: 28px
+    &-group
+      display: flex
+      max-width: 280px
+      flex-wrap: wrap
+    &__input
+      padding-top: 13px
+      padding-bottom: 13px
+      padding-right: 20px
+    &__icon
+      top: 17px
+    &__button
+      position: static
+      margin-top: 10px
+      border-radius: 8px
+      width: 100%
+  .footer
+    padding-bottom: 43px
+    &-wrapper
+      flex-direction: column
+      align-items: center
+      width: inherit
+      margin: auto
+      // margin-left: 12px
+      padding-left: 33px
+      padding-right: 28px
+    &-information
+      order: -1
+      width: 223px
+      align-self: flex-start
+    &-card
+      max-width: 144px
+      &__title
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 20px
+      &__link
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 15px
+    &-social
+      margin-top: 50px
+      align-items: center
+      // padding-left: 37px
+      &__logo
+        margin-bottom: 9px
+      &__text
+        font-size: 14px
+        line-height: 24px
+        text-align: center
+        margin-bottom: 22px
+    &-navigation, &-services, &-company
+      margin-bottom: 15px
+@media (min-width: 480px) and (max-width: 576px)
+  .hero
+    &-image
+      &__background
+        width: 100%
+@media screen and ( max-height: 460px )
+  .feedback
+    padding: 20px 24px
+    padding-bottom: 10px
+    top: 0
+    &__title
+      margin-bottom: 10px
+    &__area
+      padding-bottom: 0
+      margin-bottom: 10px
+      padding-top: 7px
+      height: 39px
+    &__input
+      padding-top: 5px
+      padding-bottom: 5px
+      &__group
+        margin-bottom: 10px
+    &__button
+      height: 34px

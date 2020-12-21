@@ -1,0 +1,144 @@
+.trands
+  padding-bottom: 145px
+  &-text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 48px
+    &__title
+      font-family: 'HKGrotesk-Bold', sans-serif
+      margin: 0
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: $primary
+    &-tabs
+      list-style-type: none
+      padding: 0
+      display: flex
+      align-items: center
+      margin: 0
+      width: 327px
+      &__item
+        font-weight: normal
+        font-size: 18px
+        line-height: 25px
+        color: $secondary
+        cursor: pointer
+        text-decoration: none
+        margin-left: 38px
+        &__active
+          font-weight: bold
+          font-size: 18px
+          line-height: 25px
+          color: $primary
+  &-wrap
+    display: none
+    &__active
+      display: grid
+      grid-template-columns: minmax(auto, auto) minmax(auto,auto) minmax(auto, auto) minmax(auto,auto)
+      justify-content: space-between
+      grid-row-gap: 50px
+  &-card
+    width: 260px
+    height: 441px
+    &__ref
+      text-decoration: none
+    &-link
+      width: 260px
+      height: 350px
+      text-decoration: none
+    &__photo
+      position: relative
+      border-radius: 8px
+      overflow: hidden
+      width: 100%
+      height: 350px
+      transition: 0.5s
+      cursor: pointer
+      &:hover
+        filter: brightness(50%)
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+      position: absolute
+      &__2
+        width: 116%
+        height: 209%
+      &__3
+        transform: matrix(-1, 0, 0, 1, 0, 0)
+        height: 152%
+        bottom: -147px
+      &__4
+        height: 162%
+        top: -126px
+      &__5
+        height: 131%
+        top: -24px
+      &__6
+        height: 260%
+        top: -49px
+      &__7
+        height: 202%
+    &__title
+      font-family: 'HKGrotesk-Medium', sans-serif
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+      margin-top: 20px
+      margin-bottom: 3px
+      color: $primary
+      margin-left: 14px
+    &__pricetag
+      display: flex
+      align-items: center
+      justify-content: space-between
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: $secondary
+      margin-left: 12px
+      margin-right: 8px
+    &__basket
+      width: 100%
+      height: 100%
+      transition: 0.5s
+      &:hover
+        filter: brightness(50%)
+    &__plus
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 260px
+      height: 350px
+      background-color: $link
+      border-radius: 8px
+      overflow: hidden
+      cursor: pointer
+      transition: 0.5s
+      padding-left: 23px
+      padding-right: 23px
+      &:hover
+        filter: brightness(50%)
+      &__image
+        width: 28px
+        height: 37px
+      &__text
+        font-family: 'HKGrotesk-Medium', sans-serif
+        font-weight: bold
+        font-size: 24px
+        line-height: 32px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #ffffff
+        margin-bottom: 0
+        margin-top: 25px
+      &__span
+        // white-space: nowrap
+.container
+  &-trands
+    max-width: 1130px

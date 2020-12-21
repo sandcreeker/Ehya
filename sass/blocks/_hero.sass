@@ -1,0 +1,99 @@
+.hero
+  padding-top: 49px
+  padding-bottom: 120px
+  &-container
+    position: relative
+    max-width: 1280px
+    margin: auto
+    background-color: $background
+    display: flex
+    height: 700px
+    border-radius: 8px
+    overflow: hidden
+    padding-left: 107px
+  &-text
+    z-index: 3
+    padding-top: 64px
+    max-width: 604px
+  &__title
+    font-family: 'HKGrotesk-Bold', sans-serif
+    font-weight: bold
+    font-size: 56px
+    line-height: 68px
+    letter-spacing: 0.2px
+    color: $primary
+    margin: 35px 0 30px 0
+  &-image
+    height: 122%
+    position: absolute
+    right: 0
+    width: 73%
+    &::before
+      content: ''
+      position: absolute
+      background: linear-gradient(270deg, rgba(238, 238, 238, 0) 66.87%, rgba(238, 238, 238, 0) 66.87%, rgba(232, 234, 233, 0) 66.87%, #E8EAE9 99.4%)
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      z-index: 2
+    &__background
+      height: 100%
+      object-fit: cover
+      width: 1093px
+      // position: absolute
+      z-index: 1
+  &__button
+    padding: 14px 38px
+    margin-bottom: 48px
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    border-radius: 8px
+    background-color: $primary
+    color: #ffffff
+    border: solid 2px $primary
+    cursor: pointer
+    outline: none
+    transition: all 150ms linear
+    &:hover
+      background-color: $background
+      color: $primary
+      transition: all 250ms linear
+.hashtag
+  font-weight: 600
+  font-size: 14px
+  line-height: 20px
+  text-align: center
+  color: $color-tag
+  padding: 6px 16px
+  border-radius: 100px
+  background-color: rgba(54, 179, 126, 0.1)
+  text-transform: uppercase
+.description
+  &__text
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $secondary
+    margin: 0px 0px 51px
+    overflow: hidden
+    max-height: 108px
+.advantages
+  width: 464px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__text
+    font-family: 'HKGrotesk-Regular', sans-serif
+    display: flex
+    align-items: center
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.2px
+  &__icon
+    width: 36px
+    height: 36px
+    margin-right: 8px

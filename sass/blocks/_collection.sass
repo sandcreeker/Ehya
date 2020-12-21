@@ -1,0 +1,87 @@
+.collection
+  padding-bottom: 145px
+  &-wrap
+    display: flex
+    justify-content: space-between
+  &-photo
+    display: grid
+    grid-template-columns: minmax(auto, auto) minmax(auto,auto)
+    justify-content: space-between
+    max-width: 670px
+    width: 100%
+    &__image
+      border-radius: 8px
+      object-fit: cover
+    &__portait
+      max-width: 320px
+      // width: 320px
+      height: 490px
+      grid-row: span 2
+    &__hall
+      width: 320px
+      height: 230px
+    &__room
+      width: 320px
+      height: 230px
+      align-self: flex-end
+  &-text
+    max-width: 413px
+  &__title
+    font-family: 'HKGrotesk-Medium', sans-serif
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.7px
+    color: $primary
+    margin-top: 10px
+    margin-bottom: 24px
+  &__info
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $secondary
+    margin-bottom: 40px
+    max-width: 400px
+    overflow: hidden
+    max-height: 225px
+  &__link
+    display: inline-block
+    max-width: 260px
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: $link
+    text-decoration: none
+    transition: 0.6s
+    &::after
+      content: ''
+      display: block
+      width: 0
+      background-color: $link
+      height: 1px
+      transition: 0.6s
+    &:hover
+      &::after
+        width: 100%
+  &__mainmenu
+    text-emphasis: none
+  &__button
+    padding: 14px 38px
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    border-radius: 8px
+    background-color: $primary
+    color: #ffffff
+    border: solid 2px $primary
+    cursor: pointer
+    outline: none
+    transition: all 150ms linear
+    &:hover
+      background-color: $background
+      color: $primary
+      transition: all 250ms linear
+
+.arrow
+  margin-left: 16px
